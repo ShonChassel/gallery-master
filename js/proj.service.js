@@ -44,7 +44,32 @@ var gProjects = [
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
     },
+    {
+        id: makeId(),
+        name: "Pacman",
+        title: "Welcome to Collect the Balls Online",
+        desc: `Multiply your balls as best you can in this awesome physics-based puzzle game!
+         You begin each level with 3 balls. Move the cup and pay mind to the different multipliers
+          that will increase your ball count. A little math and a steady hand will maximize your ball
+           count and earn you three stars on each level!!`,
+        url: "https://shonchassel.github.io/pacman/",
+        publishedAt: 1448693940000,
+        labels: ["Matrixes", "keyboard events"],
+    },
+    {
+        id: makeId(),
+        name: "Book Shop",
+        title: "Welcome to Collect the Balls Online",
+        desc: `Multiply your balls as best you can in this awesome physics-based puzzle game!
+         You begin each level with 3 balls. Move the cup and pay mind to the different multipliers
+          that will increase your ball count. A little math and a steady hand will maximize your ball
+           count and earn you three stars on each level!!`,
+        url: "https://shonchassel.github.io/Book-Shop/",
+        publishedAt: 1448693940000,
+        labels: ["Matrixes", "keyboard events"],
+    },
 ]
+
 
 
 function getProjects() {

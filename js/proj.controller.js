@@ -4,7 +4,6 @@ function initPage() {
     renderProjects()
 }
 
-
 function renderProjects() {
     var projs = getProjects()
     var strHTML = projs.map(proj => {
@@ -26,8 +25,6 @@ function renderProjects() {
     })
     document.querySelector('.photos-container').innerHTML = strHTML.join('')
 }
-
-
 
 function renderModal(projId) {
     // document.getElementById("page-top").classList.add('modal-open')
@@ -72,4 +69,25 @@ function renderModal(projId) {
     document.querySelector('.modal-container').innerHTML = strHTML
     console.groupEnd()
 
+}
+
+function makeUrl(){
+console.group(makeUrl)
+var elName = document.getElementById('Name').value
+console.log(elName)
+var elEmail = document.getElementById('Email').value
+console.log(elEmail)
+var elMessage = document.getElementById('Message').value
+console.log(elMessage)
+
+
+window.open("https://mail.google.com/mail/u/0/?fs=1&to="+elEmail+"&su="+elMessage+"&body=BODY&bcc="+elEmail+"&tf=cm");
+
+https://mail.google.com/mail/u/0/?fs=1&to=me@example.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=cm
+
+// const queryStringParams = `?minPrice=${filterBy.minPrice}`
+// const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + queryStringParams
+
+// window.history.pushState({ path: newUrl }, '', newUrl)
+console.groupEnd()
 }
