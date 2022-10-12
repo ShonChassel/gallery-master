@@ -55,7 +55,6 @@ function renderModal(projId) {
     <p>${proj.desc}!</p>
     <ul class="list-inline">
     <li>Date: ${proj.publishedAt}</li>
-    <li>Client: Everyone</li>
     <li>Category: Game</li>
     </ul>
     <button class="badge btn bg-dark"><a href="${proj.url}" class="badge btn bg-dark">Lets Play</a></button>
@@ -81,7 +80,7 @@ var elMessage = document.getElementById('Message').value
 console.log(elMessage)
 
 
-window.open("https://mail.google.com/mail/u/0/?fs=1&to="+elEmail+"&su="+elMessage+"&body=BODY&bcc="+elEmail+"&tf=cm");
+window.open("https://mail.google.com/mail/u/0/?fs=1&to="+elEmail+"&su="+elName+"&body="+elMessage+"&bcc="+elEmail+"&tf=cm");
 
 https://mail.google.com/mail/u/0/?fs=1&to=me@example.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com&tf=cm
 
