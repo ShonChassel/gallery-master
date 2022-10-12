@@ -1,11 +1,12 @@
 'use strict'
 
+
 var gProjects = [
     {
-     id: makeId(),
-     name: "Minesweeper",
-     title: "Welcome to Minesweeper Online",
-     desc: `Playing minesweeper is our passion. 
+        id: makeId(),
+        name: "Minesweeper",
+        title: "Welcome to Minesweeper Online",
+        desc: `Playing minesweeper is our passion. 
      That's why we strive to make it the greatest game in the world!Select
       a difficulty level to challenge yourself, and enjoy the game! 
       Rules Minesweeper rules are very simple. The board is divided 
@@ -15,9 +16,9 @@ var gProjects = [
        you can determine cells that are safe, and cells that contain mines.
         Cells suspected of being mines can be marked with a flag using the
          right mouse button.`,
-     url: "https://shonchassel.github.io/MineSweeper/",
-     publishedAt: 1448693940000,
-     labels: ["Matrixes", "keyboard events"],
+        url: "https://shonchassel.github.io/MineSweeper/",
+        publishedAt: 1448693940000,
+        labels: ["Matrixes", "keyboard events"],
     },
     {
         id: makeId(),
@@ -30,8 +31,8 @@ var gProjects = [
         url: "https://shonchassel.github.io/touch-the-nums/",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
-       },
-       {
+    },
+    {
         id: makeId(),
         name: "Collect the Balls",
         title: "Welcome to Collect the Balls Online",
@@ -42,10 +43,16 @@ var gProjects = [
         url: "https://shonchassel.github.io/Collect-the-Balls/",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
-       },
-    ]
-    
+    },
+]
 
-    function getProjects(){
-        return gProjects
-    }
+
+function getProjects() {
+    return gProjects
+}
+
+function getProjById(projId) {
+    return gProjects.find(proj => {
+        return proj.id === projId
+    })
+}
