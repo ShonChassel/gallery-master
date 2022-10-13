@@ -64,7 +64,7 @@ var gProjects = [
          You begin each level with 3 balls. Move the cup and pay mind to the different multipliers
           that will increase your ball count. A little math and a steady hand will maximize your ball
            count and earn you three stars on each level!!`,
-        url: "https://shonchassel.github.io/Book-Shop2/",
+        url: "https://shonchassel.github.io/Book-Shop/",
         publishedAt: 1448693940000,
         labels: ["Matrixes", "keyboard events"],
     },
